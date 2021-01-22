@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: api-gateway 
+    
+server:
+  port: 2020
+ 
+zuul:
+  routes:
+    blood-donor-mvc: 
+      url: http://localhost:8686
+    blood-donor-service:
+      url: http://localhost:4040
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka  
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"              

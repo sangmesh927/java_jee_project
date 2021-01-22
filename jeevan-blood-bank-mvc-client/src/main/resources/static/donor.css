@@ -1,0 +1,28 @@
+@charset "ISO-8859-1";
+
+#heading{
+	text-align: center;
+	color: blue;
+	font-size: 50pt;
+	font-style: oblique;
+}
+
+#mesg{
+	text-align: center;
+	color: red;
+	font-size: 25pt;
+	font-weight: bold;
+}
+
+form{
+	background-color: aqua;
+	border: 20px;
+	border-color: black;
+}
+
+table{
+	position: relative;
+	align-content: center;
+	border-collapse: collapse;
+	width: 100%;
+}
